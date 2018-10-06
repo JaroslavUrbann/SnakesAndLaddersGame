@@ -1,0 +1,49 @@
+C:\Users\jara\Desktop\Urban_Hra\Urban_Hra\bin\Debug\SPSSE Application.exe.config
+C:\Users\jara\Desktop\Urban_Hra\Urban_Hra\bin\Debug\SPSSE Application.exe
+C:\Users\jara\Desktop\Urban_Hra\Urban_Hra\bin\Debug\SPSSE Application.pdb
+C:\Users\jara\Desktop\Urban_Hra\Urban_Hra\obj\Debug\View\Main\MainWindow.g.cs
+C:\Users\jara\Desktop\Urban_Hra\Urban_Hra\obj\Debug\App.g.cs
+C:\Users\jara\Desktop\Urban_Hra\Urban_Hra\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\jara\Desktop\Urban_Hra\Urban_Hra\obj\Debug\SPSSE Application_MarkupCompile.cache
+C:\Users\jara\Desktop\Urban_Hra\Urban_Hra\obj\Debug\SPSSE Application_MarkupCompile.lref
+C:\Users\jara\Desktop\Urban_Hra\Urban_Hra\obj\Debug\App.baml
+C:\Users\jara\Desktop\Urban_Hra\Urban_Hra\obj\Debug\View\Main\MainWindow.baml
+C:\Users\jara\Desktop\Urban_Hra\Urban_Hra\obj\Debug\SPSSE Application.g.resources
+C:\Users\jara\Desktop\Urban_Hra\Urban_Hra\obj\Debug\Urban_Hra.Properties.Resources.resources
+C:\Users\jara\Desktop\Urban_Hra\Urban_Hra\obj\Debug\Urban_Hra.csproj.GenerateResource.Cache
+C:\Users\jara\Desktop\Urban_Hra\Urban_Hra\obj\Debug\SPSSE Application.exe
+C:\Users\jara\Desktop\Urban_Hra\Urban_Hra\obj\Debug\SPSSE Application.pdb
+C:\Users\jara\Desktop\Urban_Hra\Urban_Hra\obj\Debug\Urban_Hra.csprojResolveAssemblyReference.cache
+X:\2\Urban_Hra\Urban_Hra\bin\Debug\SPSSE Application.exe.config
+X:\2\Urban_Hra\Urban_Hra\obj\Debug\SPSSE Application.exe
+X:\2\Urban_Hra\Urban_Hra\obj\Debug\SPSSE Application.pdb
+X:\2\Urban_Hra\Urban_Hra\bin\Debug\SPSSE Application.exe
+X:\2\Urban_Hra\Urban_Hra\bin\Debug\SPSSE Application.pdb
+X:\2\Urban_Hra\Urban_Hra\obj\Debug\Urban_Hra.csprojResolveAssemblyReference.cache
+X:\2\Urban_Hra\Urban_Hra\obj\Debug\View\Main\MainWindow.g.cs
+X:\2\Urban_Hra\Urban_Hra\obj\Debug\App.g.cs
+X:\2\Urban_Hra\Urban_Hra\obj\Debug\GeneratedInternalTypeHelper.g.cs
+X:\2\Urban_Hra\Urban_Hra\obj\Debug\SPSSE Application_MarkupCompile.cache
+X:\2\Urban_Hra\Urban_Hra\obj\Debug\SPSSE Application_MarkupCompile.lref
+X:\2\Urban_Hra\Urban_Hra\obj\Debug\App.baml
+X:\2\Urban_Hra\Urban_Hra\obj\Debug\View\Main\MainWindow.baml
+X:\2\Urban_Hra\Urban_Hra\obj\Debug\SPSSE Application.g.resources
+X:\2\Urban_Hra\Urban_Hra\obj\Debug\Urban_Hra.Properties.Resources.resources
+X:\2\Urban_Hra\Urban_Hra\obj\Debug\Urban_Hra.csproj.GenerateResource.Cache
+C:\Users\Jaroslav Urban\Desktop\Urban_Hra\Urban_Hra\bin\Debug\SPSSE Application.exe.config
+C:\Users\Jaroslav Urban\Desktop\Urban_Hra\Urban_Hra\bin\Debug\SPSSE Application.exe
+C:\Users\Jaroslav Urban\Desktop\Urban_Hra\Urban_Hra\bin\Debug\SPSSE Application.pdb
+C:\Users\Jaroslav Urban\Desktop\Urban_Hra\Urban_Hra\obj\Debug\Urban_Hra.csprojAssemblyReference.cache
+C:\Users\Jaroslav Urban\Desktop\Urban_Hra\Urban_Hra\obj\Debug\View\Main\MainWindow.g.cs
+C:\Users\Jaroslav Urban\Desktop\Urban_Hra\Urban_Hra\obj\Debug\App.g.cs
+C:\Users\Jaroslav Urban\Desktop\Urban_Hra\Urban_Hra\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Jaroslav Urban\Desktop\Urban_Hra\Urban_Hra\obj\Debug\SPSSE Application_MarkupCompile.cache
+C:\Users\Jaroslav Urban\Desktop\Urban_Hra\Urban_Hra\obj\Debug\SPSSE Application_MarkupCompile.lref
+C:\Users\Jaroslav Urban\Desktop\Urban_Hra\Urban_Hra\obj\Debug\App.baml
+C:\Users\Jaroslav Urban\Desktop\Urban_Hra\Urban_Hra\obj\Debug\View\Main\MainWindow.baml
+C:\Users\Jaroslav Urban\Desktop\Urban_Hra\Urban_Hra\obj\Debug\SPSSE Application.g.resources
+C:\Users\Jaroslav Urban\Desktop\Urban_Hra\Urban_Hra\obj\Debug\Urban_Hra.Properties.Resources.resources
+C:\Users\Jaroslav Urban\Desktop\Urban_Hra\Urban_Hra\obj\Debug\Urban_Hra.csproj.GenerateResource.cache
+C:\Users\Jaroslav Urban\Desktop\Urban_Hra\Urban_Hra\obj\Debug\Urban_Hra.csproj.CoreCompileInputs.cache
+C:\Users\Jaroslav Urban\Desktop\Urban_Hra\Urban_Hra\obj\Debug\SPSSE Application.exe
+C:\Users\Jaroslav Urban\Desktop\Urban_Hra\Urban_Hra\obj\Debug\SPSSE Application.pdb

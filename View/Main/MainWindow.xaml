@@ -1,0 +1,108 @@
+﻿<Window x:Class="Urban_Hra.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Urban_Hra"
+        xmlns:vm="clr-namespace:Urban_Hra.ViewModel"
+        xmlns:conv="clr-namespace:Urban_Hra.View.Converter" 
+        Title="Aplikace" 
+        Height="{Binding Source={StaticResource Settings}, Path=MainWindowHeight, Mode=TwoWay}" 
+        Width="{Binding Source={StaticResource Settings}, Path=MainWindowWidth, Mode=TwoWay}"
+        Left="{Binding Source={StaticResource Settings}, Path=MainWindowLeft, Mode=TwoWay}"
+        Top="{Binding Source={StaticResource Settings}, Path=MainWindowTop, Mode=TwoWay}">
+    <Window.Resources>
+        <Style x:Key="Poradi" TargetType="TextBlock">
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="TextAlignment" Value="Center"></Setter>
+            <Setter Property="Grid.Column" Value="13"></Setter>
+        </Style>
+        <Style x:Key="Cisla" TargetType="TextBlock">
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="TextAlignment" Value="Right"></Setter>
+            <Setter Property="Grid.Column" Value="12"></Setter>
+        </Style>
+        <Style x:Key="Postavicky" TargetType="Image">
+            <Setter Property="VerticalAlignment" Value="Bottom"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+            <Setter Property="Grid.RowSpan" Value="2"></Setter>
+        </Style>
+        <conv:DoNothingConverter x:Key="testConverter" />
+        <conv:HodDoPNG x:Key="HodDoPNG"></conv:HodDoPNG>
+        <conv:DoCJ x:Key="DoCJ"></conv:DoCJ>
+        <VisualBrush x:Key="Board">
+            <VisualBrush.Visual>
+                <Grid>
+                    <Image Source="/assets/board.jpg"/>
+                </Grid>
+            </VisualBrush.Visual>
+        </VisualBrush>
+    </Window.Resources>
+    <Window.DataContext>
+        <vm:MainViewModel />
+    </Window.DataContext>
+    <Grid x:Name="grid" MinHeight="500px" MinWidth="750px">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" ></ColumnDefinition>
+            <ColumnDefinition Width="3*" ></ColumnDefinition>
+            <ColumnDefinition Width="3*" ></ColumnDefinition>
+            <ColumnDefinition Width="3*" ></ColumnDefinition>
+            <ColumnDefinition Width="3*" ></ColumnDefinition>
+            <ColumnDefinition Width="3*" ></ColumnDefinition>
+            <ColumnDefinition Width="3*" ></ColumnDefinition>
+            <ColumnDefinition Width="3*" ></ColumnDefinition>
+            <ColumnDefinition Width="3*" ></ColumnDefinition>
+            <ColumnDefinition Width="3*" ></ColumnDefinition>
+            <ColumnDefinition Width="3*" ></ColumnDefinition>
+            <ColumnDefinition Width="*" ></ColumnDefinition>
+            <ColumnDefinition Width="2*" ></ColumnDefinition>
+            <ColumnDefinition Width="7*" ></ColumnDefinition>
+            <ColumnDefinition Width="6*" ></ColumnDefinition>
+            <ColumnDefinition Width="*" ></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Background="{StaticResource Board}" Grid.Column="0" Grid.Row="0" Grid.RowSpan="12" Grid.ColumnSpan="12"></Grid>
+        <Border BorderBrush="{x:Null}" Grid.Column="12" Grid.Row="1" Grid.ColumnSpan="3" Margin="3" Background="{Binding StatusBackground}">
+            <TextBlock Text="{Binding Status}" FontSize="16" TextWrapping="Wrap" VerticalAlignment="Center" TextAlignment="Center" ></TextBlock>
+        </Border>
+        <Button Command="{Binding _hod}" Grid.Row="2" Grid.Column="12" Grid.RowSpan="3" Grid.ColumnSpan="3" Margin="5" IsEnabled="{Binding Enabled}">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Stretch="Uniform" Source="{Binding HozeneCislo, Converter={StaticResource HodDoPNG}}"></Image>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <TextBlock Grid.Row="5" Style="{StaticResource Poradi}" Text="Pořadí:" FontSize="14"></TextBlock>
+        <TextBlock Grid.Row="6" Style="{StaticResource Poradi}" Text="{Binding Poradi1, Converter={StaticResource DoCJ}}" x:Name="prvni"></TextBlock>
+        <TextBlock Grid.Row="7" Style="{StaticResource Poradi}" Text="{Binding Poradi2, Converter={StaticResource DoCJ}}" x:Name="druhy"></TextBlock>
+        <TextBlock Grid.Row="8" Style="{StaticResource Poradi}" Text="{Binding Poradi3, Converter={StaticResource DoCJ}}" x:Name="treti"></TextBlock>
+        <TextBlock Grid.Row="9" Style="{StaticResource Poradi}" Text="{Binding Poradi4, Converter={StaticResource DoCJ}}" x:Name="ctvrty"></TextBlock>
+        <TextBlock Grid.Row="10" Style="{StaticResource Poradi}" Text="{Binding Poradi5, Converter={StaticResource DoCJ}}" x:Name="paty"></TextBlock>
+        <TextBlock Grid.Row="6" Style="{StaticResource Cisla}" Text="1."></TextBlock>
+        <TextBlock Grid.Row="7" Style="{StaticResource Cisla}" Text="2."></TextBlock>
+        <TextBlock Grid.Row="8" Style="{StaticResource Cisla}" Text="3."></TextBlock>
+        <TextBlock Grid.Row="9" Style="{StaticResource Cisla}" Text="4."></TextBlock>
+        <TextBlock Grid.Row="10" Style="{StaticResource Cisla}" Text="5."></TextBlock>
+        <TextBlock Grid.Row="6" Grid.Column="14" Text="Zde zadejte počet hráčů (2-5)" Grid.RowSpan="2" TextWrapping="Wrap" VerticalAlignment="Bottom" TextAlignment="Center" Margin="5"></TextBlock>
+        <TextBox Text="{Binding PocetH}" Grid.Row="8" Grid.Column="14" TextAlignment="Center" VerticalAlignment="Center" Margin="5"></TextBox>
+        <Button Command="{Binding _novaHra}" Grid.Row="9" Grid.Column="14" Content="Nová hra" HorizontalContentAlignment="Center" VerticalAlignment="Top" Margin="5"></Button>
+        <Button x:Name="Ulozit" Click="Ulozit_Click" Grid.Row="10" Grid.Column="14" Content="Uložit pořadí" HorizontalContentAlignment="Center" VerticalAlignment="Top" Margin="5" IsEnabled="{Binding EnableUlozit}"></Button>
+        <Button x:Name="Rules" Click="Rules_Click" Grid.Row="5" Grid.Column="12" Content="  ?  " HorizontalContentAlignment="Center" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="1"></Button>
+        <Image Style="{StaticResource Postavicky}" Grid.Row="{Binding RedRow}" Grid.Column="{Binding RedCol}" Source="/assets/red.png" Margin="0,0,0,12" Panel.ZIndex="{Binding RedRow}" Visibility="{Binding RedVis}"></Image>
+        <Image Style="{StaticResource Postavicky}" Grid.Row="{Binding GreenRow}" Grid.Column="{Binding GreenCol}" Source="/assets/green.png" Margin="3,0,0,9" Panel.ZIndex="{Binding GreenRow}" Visibility="{Binding GreenVis}"></Image>
+        <Image Style="{StaticResource Postavicky}" Grid.Row="{Binding BlueRow}" Grid.Column="{Binding BlueCol}" Source="/assets/blue.png" Margin="6,0,0,6" Panel.ZIndex="{Binding BlueRow}" Visibility="{Binding BlueVis}"></Image>
+        <Image Style="{StaticResource Postavicky}" Grid.Row="{Binding YellowRow}" Grid.Column="{Binding YellowCol}" Source="/assets/yellow.png" Margin="9,0,0,3" Panel.ZIndex="{Binding YellowRow}" Visibility="{Binding YellowVis}"></Image>
+        <Image Style="{StaticResource Postavicky}" Grid.Row="{Binding OrangeRow}" Grid.Column="{Binding OrangeCol}" Source="/assets/orange.png" Margin="12,0,0,0" Panel.ZIndex="{Binding OrangeRow}" Visibility="{Binding OrangeVis}" ></Image>
+    </Grid>
+</Window>
